@@ -59,6 +59,43 @@ describe('JS6 Lab Tests:', () => {
         expect(sumOfTwoNumbers(2, 3)).to.equal(5)
       })
     })
+
+    describe("Question 1a: Sorted an array of numbers", () => {
+      it ("#Should sort an array in ascending order", () => {
+        const arrayOfNumbers = [1, 5, 3, 2, 4]
+        arrayOfNumbers.sort((a, b) => a - b)
+
+expect(arrayOfNumbers).to.equal([1,2,3,4,5])
+      })
+  describe("Question 1b:Manage my wallet", () => {
+
+    class Wallet {
+      constructor(startingMoney) {
+        this.money = startingMoney
+      }
+    
+      addMoney(amount) {
+        this.money += amount
+      }
+    
+      removeMoney(amount) {
+        this.money -= amount
+      }
+    }
+    
+    const myWallet = new Wallet(100)
+    myWallet.removeMoney(14.99)
+    myWallet.addMoney(3)
+    
+    console.log(myWallet.money)
+   it("#Should be able ot add money to my wallet"), () => {
+
+    let myWallet = new Wallet(10)
+    myWallet.addMoney(5)
+
+    expect(myWallet.money).to.equal(15)
+   })
+
   })
   /*--------------------------NEW TESTS BELOW-------------------------------*/
-})
+  })

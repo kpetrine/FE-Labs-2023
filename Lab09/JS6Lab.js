@@ -74,32 +74,32 @@ console.log(addTwoNumbers(2, 3)) // logs 5
 /*--------------------------------------------------------------------*/
 console.log(`1a: Sorted array of numbers:`)
 
-// const arrayOfNumbers = [1, 5, 3, 2, 4]
-// arrayOfNumbers = arrayOfNumbers.sort((a, b) => a - b)
+const arrayOfNumbers = [1, 5, 3, 2, 4]
+arrayOfNumbers.sort((a, b) => a - b)
 
-// console.log(arrayOfNumbers)
+console.log(arrayOfNumbers)
 /*----------------------------------------------------*/
 console.log(`1b: Manage my wallet `)
 
-// class Wallet {
-//   constructor(startingMoney) {
-//     this.money = startingMoney
-//   }
+class Wallet {
+  constructor(startingMoney) {
+    this.money = startingMoney
+  }
 
-//   addMoney(amount) {
-//     money += amount
-//   }
+  addMoney(amount) {
+    this.money += amount
+  }
 
-//   removeMoney(amount) {
-//     money -= amount
-//   }
-// }
+  removeMoney(amount) {
+    this.money -= amount
+  }
+}
 
-// const myWallet = new Wallet(100)
-// myWallet.removeMoney(14.99)
-// myWallet.addMoney(3)
+const myWallet = new Wallet(100)
+myWallet.removeMoney(14.99)
+myWallet.addMoney(3)
 
-// console.log(myWallet.money)
+console.log(myWallet.money)
 /*----------------------------------------------------*/
 console.log(`1c: Day of the Week`)
 //In some cases, there's no error, but you're not getting your expected result back.
